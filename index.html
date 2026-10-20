@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Марина Грушко — Textile &amp; Print Designer</title>
+<meta name="description" content="Marina Grushko — textile and print designer. Print design, sublimation printing, branded apparel. Herzliya, Israel.">
+<meta property="og:title" content="Марина Грушко — Textile &amp; Print Designer">
+<meta property="og:description" content="Print design, sublimation and branded apparel — from idea to finished product.">
+<meta property="og:image" content="thumbs/201610071832.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--ink:#1d1b24;--mute:#6b6676;--line:#e6dfd3;--accent:#c2410c;--card:#fff;--dark:#17141f}
+@media (prefers-color-scheme:dark){:root{--bg:#14121a;--ink:#f3eee6;--mute:#a8a2b4;--line:#2b2735;--accent:#fb923c;--card:#1d1a25}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Rubik,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{font-weight:600;letter-spacing:.02em}
+.lang{display:flex;gap:4px;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:transparent;color:var(--mute);font:inherit;font-size:14px;padding:4px 14px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:36px 0 56px}
+.kicker{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.05;margin:0 0 10px;font-weight:700;letter-spacing:-.02em}
+.role{font-size:clamp(20px,2.6vw,28px);font-weight:500;margin:0 0 18px}
+.lead{font-size:18px;color:var(--mute);max-width:60ch;margin:0 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 14px;font-size:14px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:500;border:1px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;aspect-ratio:3/4;background:var(--line)}
+.mosaic img:nth-child(2){transform:translateY(24px)}
+.mosaic img:nth-child(4){transform:translateY(24px)}
+.sec{padding:24px 0 8px}
+.sec h2{font-size:28px;margin:0 0 4px}
+.sec p{margin:0 0 22px;color:var(--mute)}
+.gallery{columns:4 260px;column-gap:14px}
+.card{margin:0 0 14px;break-inside:avoid}
+.open{display:block;width:100%;padding:0;border:0;background:var(--line);border-radius:14px;overflow:hidden;cursor:zoom-in}
+.open img{display:block;width:100%;height:auto;transition:transform .35s}
+.open:hover img,.open:focus-visible img{transform:scale(1.04)}
+.open:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.contact{margin:64px 0 0;background:var(--dark);color:#f3eee6;padding:56px 0}
+.contact h2{margin:0 0 6px;font-size:30px}
+.contact p{color:#b9b3c6;margin:0 0 24px}
+.contact ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.contact a{display:block;text-decoration:none;border:1px solid #3a3548;border-radius:14px;padding:14px 18px}
+.contact a:hover{border-color:#fb923c}
+.contact small{display:block;color:#9d97ab;font-size:13px}
+footer{padding:20px 0;color:var(--mute);font-size:13px;text-align:center}
+.lb{position:fixed;inset:0;background:rgba(10,8,14,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:calc(100vh - 90px);border-radius:8px;object-fit:contain}
+.lb .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#cfc9da;font-size:14px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:46px;height:46px;border-radius:50%;font-size:24px;cursor:pointer}
+.lb button:hover{background:rgba(255,255,255,.25)}
+.lb .x{top:16px;right:16px} .lb .p{left:16px} .lb .n{right:16px}
+[dir=rtl] .lb .x{right:auto;left:16px}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:28px;padding-top:12px}.mosaic{order:-1}.mosaic img:nth-child(n){transform:none}.mosaic img:nth-child(n+3){display:none}.mosaic img{aspect-ratio:4/5}}
+@media (max-width:520px){.gallery{columns:2 140px;column-gap:10px}.card{margin-bottom:10px}.lead{font-size:17px}.lb button.p,.lb button.n{width:40px;height:40px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.open img{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand" data-ru="Марина Грушко" data-he="מרינה גרושקו" data-en="Marina Grushko">Марина Грушко</div>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-l="ru" aria-pressed="true">RU</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="he" aria-pressed="false">עב</button></div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="kicker" data-ru="Портфолио" data-he="תיק עבודות" data-en="Portfolio">Портфолио</p>
+      <h1 data-ru="Марина Грушко" data-he="מרינה גרושקו" data-en="Marina Grushko">Марина Грушко</h1>
+      <p class="role" data-ru="Дизайнер текстиля и принтов" data-he="מעצבת טקסטיל והדפסים" data-en="Textile &amp; Print Designer">Дизайнер текстиля и принтов</p>
+      <p class="lead" data-ru="Создаю коллекции принтованной и брендированной одежды для магазинов, компаний, спортивных команд, мото- и автоклубов. Создаю принт вместе с изделием: лекала, ткань, графика, технология печати и вышивки. Работаю в Illustrator, Photoshop, CorelDRAW и Wilcom, использую Midjourney для концептов. Живу в Герцлии." data-he="אני מפתחת קולקציות של ביגוד מודפס וממותג לחנויות מותג, לחברות, לקבוצות ספורט ולמועדוני אופנועים ורכב. אני יוצרת את ההדפס יחד עם המוצר: תבניות, בד, גרפיקה וטכנולוגיית הדפסה ורקמה. עובדת בתוכנות Illustrator, Photoshop, CorelDRAW ו-Wilcom, ומשתמשת ב-Midjourney לפיתוח קונספטים. מתגוררת בהרצליה." data-en="I develop collections of printed and branded apparel for retail brands, companies, sports teams, and motorcycle and car clubs. I design the print together with the product: patterns, fabric, graphics, and printing and embroidery technology. I work in Illustrator, Photoshop, CorelDRAW and Wilcom, and use Midjourney for concepts. Based in Herzliya, Israel.">Создаю коллекции принтованной и брендированной одежды для магазинов, компаний, спортивных команд, мото- и автоклубов. Создаю принт вместе с изделием: лекала, ткань, графика, технология печати и вышивки. Работаю в Illustrator, Photoshop, CorelDRAW и Wilcom, использую Midjourney для концептов. Живу в Герцлии.</p>
+      <ul class="chips">
+        <li data-ru="Дизайн принтов" data-he="עיצוב הדפסים" data-en="Print design">Дизайн принтов</li>
+        <li data-ru="Сублимационная печать" data-he="הדפסת סובלימציה" data-en="Sublimation printing">Сублимационная печать</li>
+        <li data-ru="Брендированная одежда" data-he="ביגוד ממותג" data-en="Branded apparel">Брендированная одежда</li>
+        <li data-ru="Лекала и конструкция" data-he="תבניות ובניית דגם" data-en="Patterns &amp; construction">Лекала и конструкция</li>
+        <li data-ru="Вышивка" data-he="רקמה" data-en="Embroidery">Вышивка</li>
+        <li>Illustrator</li><li>Photoshop</li><li>CorelDRAW</li><li>Wilcom</li><li>Midjourney</li>
+      </ul>
+      <div class="cta">
+        <a class="btn primary" href="#works" data-ru="Смотреть работы" data-he="לצפייה בעבודות" data-en="View work">Смотреть работы</a>
+        <a class="btn" href="#contact" data-ru="Связаться" data-he="צור קשר" data-en="Get in touch">Связаться</a>
+      </div>
+    </div>
+    <div class="mosaic" aria-hidden="true"><img src="thumbs/201610071832.jpg" alt="" loading="eager" decoding="async"><img src="thumbs/201710281152.jpg" alt="" loading="eager" decoding="async"><img src="thumbs/201904071318.jpg" alt="" loading="eager" decoding="async"><img src="thumbs/202306211332.jpg" alt="" loading="eager" decoding="async"></div>
+  </section>
+
+  <section class="sec" id="works">
+    <h2 data-ru="Работы" data-he="עבודות" data-en="Work">Работы</h2>
+    <p data-ru="Новые работы сверху. Нажмите на фото, чтобы увеличить." data-he="העבודות החדשות למעלה. לחצו על תמונה להגדלה." data-en="Newest first. Click a photo to enlarge.">Новые работы сверху. Нажмите на фото, чтобы увеличить.</p>
+    <div class="gallery">
+<figure class="card"><button type="button" class="open" data-i="0" data-full="202409031238.jpg" data-ru="сен 2024" data-he="ספט׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Sep 2024"><img src="thumbs/202409031238.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="1" data-full="202409031217.jpg" data-ru="сен 2024" data-he="ספט׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Sep 2024"><img src="thumbs/202409031217.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="2" data-full="202408301351.jpg" data-ru="авг 2024" data-he="אוג׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2024"><img src="thumbs/202408301351.jpg" width="640" height="623" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="3" data-full="202408151617.jpg" data-ru="авг 2024" data-he="אוג׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2024"><img src="thumbs/202408151617.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="4" data-full="202408130956.jpg" data-ru="авг 2024" data-he="אוג׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2024"><img src="thumbs/202408130956.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="5" data-full="202408071442.jpg" data-ru="авг 2024" data-he="אוג׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2024"><img src="thumbs/202408071442.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="6" data-full="202408011718.jpg" data-ru="авг 2024" data-he="אוג׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2024"><img src="thumbs/202408011718.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="7" data-full="202408011704.jpg" data-ru="авг 2024" data-he="אוג׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2024"><img src="thumbs/202408011704.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="8" data-full="202407081155.jpg" data-ru="июл 2024" data-he="יולי 2024" aria-label="Открыть фото / פתח תמונה" data-en="Jul 2024"><img src="thumbs/202407081155.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="9" data-full="202407081154.jpg" data-ru="июл 2024" data-he="יולי 2024" aria-label="Открыть фото / פתח תמונה" data-en="Jul 2024"><img src="thumbs/202407081154.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="10" data-full="202407051254.jpg" data-ru="июл 2024" data-he="יולי 2024" aria-label="Открыть фото / פתח תמונה" data-en="Jul 2024"><img src="thumbs/202407051254.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="11" data-full="202407041131.jpg" data-ru="июл 2024" data-he="יולי 2024" aria-label="Открыть фото / פתח תמונה" data-en="Jul 2024"><img src="thumbs/202407041131.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="12" data-full="202407021326.jpg" data-ru="июл 2024" data-he="יולי 2024" aria-label="Открыть фото / פתח תמונה" data-en="Jul 2024"><img src="thumbs/202407021326.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="13" data-full="202403261024.jpg" data-ru="мар 2024" data-he="מרץ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2024"><img src="thumbs/202403261024.jpg" width="640" height="869" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="14" data-full="202401101257.jpg" data-ru="янв 2024" data-he="ינו׳ 2024" aria-label="Открыть фото / פתח תמונה" data-en="Jan 2024"><img src="thumbs/202401101257.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2024 / עבודה, 2024"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="15" data-full="202306300949.jpg" data-ru="июн 2023" data-he="יוני 2023" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2023"><img src="thumbs/202306300949.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2023 / עבודה, 2023"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="16" data-full="202306300946.jpg" data-ru="июн 2023" data-he="יוני 2023" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2023"><img src="thumbs/202306300946.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2023 / עבודה, 2023"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="17" data-full="202306211347.jpg" data-ru="июн 2023" data-he="יוני 2023" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2023"><img src="thumbs/202306211347.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2023 / עבודה, 2023"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="18" data-full="202306211332.jpg" data-ru="июн 2023" data-he="יוני 2023" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2023"><img src="thumbs/202306211332.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2023 / עבודה, 2023"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="19" data-full="202210181704.jpg" data-ru="окт 2022" data-he="אוק׳ 2022" aria-label="Открыть фото / פתח תמונה" data-en="Oct 2022"><img src="thumbs/202210181704.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2022 / עבודה, 2022"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="20" data-full="202209251114.jpg" data-ru="сен 2022" data-he="ספט׳ 2022" aria-label="Открыть фото / פתח תמונה" data-en="Sep 2022"><img src="thumbs/202209251114.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2022 / עבודה, 2022"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="21" data-full="202207291056.jpg" data-ru="июл 2022" data-he="יולי 2022" aria-label="Открыть фото / פתח תמונה" data-en="Jul 2022"><img src="thumbs/202207291056.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2022 / עבודה, 2022"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="22" data-full="202207281636.jpg" data-ru="июл 2022" data-he="יולי 2022" aria-label="Открыть фото / פתח תמונה" data-en="Jul 2022"><img src="thumbs/202207281636.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2022 / עבודה, 2022"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="23" data-full="202111051004.jpg" data-ru="ноя 2021" data-he="נוב׳ 2021" aria-label="Открыть фото / פתח תמונה" data-en="Nov 2021"><img src="thumbs/202111051004.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2021 / עבודה, 2021"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="24" data-full="202106101656.jpg" data-ru="июн 2021" data-he="יוני 2021" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2021"><img src="thumbs/202106101656.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2021 / עבודה, 2021"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="25" data-full="202105030912.jpg" data-ru="май 2021" data-he="מאי 2021" aria-label="Открыть фото / פתח תמונה" data-en="May 2021"><img src="thumbs/202105030912.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2021 / עבודה, 2021"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="26" data-full="202105030911.jpg" data-ru="май 2021" data-he="מאי 2021" aria-label="Открыть фото / פתח תמונה" data-en="May 2021"><img src="thumbs/202105030911.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2021 / עבודה, 2021"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="27" data-full="202104231525.jpg" data-ru="апр 2021" data-he="אפר׳ 2021" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2021"><img src="thumbs/202104231525.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2021 / עבודה, 2021"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="28" data-full="202102151416.jpg" data-ru="фев 2021" data-he="פבר׳ 2021" aria-label="Открыть фото / פתח תמונה" data-en="Feb 2021"><img src="thumbs/202102151416.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2021 / עבודה, 2021"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="29" data-full="202101141434.jpg" data-ru="янв 2021" data-he="ינו׳ 2021" aria-label="Открыть фото / פתח תמונה" data-en="Jan 2021"><img src="thumbs/202101141434.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2021 / עבודה, 2021"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="30" data-full="202011161022.jpg" data-ru="ноя 2020" data-he="נוב׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Nov 2020"><img src="thumbs/202011161022.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="31" data-full="202010021244.jpg" data-ru="окт 2020" data-he="אוק׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Oct 2020"><img src="thumbs/202010021244.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="32" data-full="202006091034.jpg" data-ru="июн 2020" data-he="יוני 2020" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2020"><img src="thumbs/202006091034.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="33" data-full="202006081804.jpg" data-ru="июн 2020" data-he="יוני 2020" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2020"><img src="thumbs/202006081804.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="34" data-full="202004222046.jpg" data-ru="апр 2020" data-he="אפר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2020"><img src="thumbs/202004222046.jpg" width="640" height="960" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="35" data-full="202004222045_02.jpg" data-ru="апр 2020" data-he="אפר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2020"><img src="thumbs/202004222045_02.jpg" width="640" height="718" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="36" data-full="202004222045.jpg" data-ru="апр 2020" data-he="אפר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2020"><img src="thumbs/202004222045.jpg" width="640" height="960" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="37" data-full="202004222016.jpg" data-ru="апр 2020" data-he="אפר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2020"><img src="thumbs/202004222016.jpg" width="640" height="960" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="38" data-full="202004131715.jpg" data-ru="апр 2020" data-he="אפר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2020"><img src="thumbs/202004131715.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="39" data-full="202002241551_02.jpg" data-ru="фев 2020" data-he="פבר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Feb 2020"><img src="thumbs/202002241551_02.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="40" data-full="202002241551.jpg" data-ru="фев 2020" data-he="פבר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Feb 2020"><img src="thumbs/202002241551.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="41" data-full="202002061543.jpg" data-ru="фев 2020" data-he="פבר׳ 2020" aria-label="Открыть фото / פתח תמונה" data-en="Feb 2020"><img src="thumbs/202002061543.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2020 / עבודה, 2020"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="42" data-full="201912282151.jpg" data-ru="дек 2019" data-he="דצמ׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Dec 2019"><img src="thumbs/201912282151.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="43" data-full="201911060004.jpg" data-ru="ноя 2019" data-he="נוב׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Nov 2019"><img src="thumbs/201911060004.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="44" data-full="201908202058.jpg" data-ru="авг 2019" data-he="אוג׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2019"><img src="thumbs/201908202058.jpg" width="640" height="854" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="45" data-full="201908181001.jpg" data-ru="авг 2019" data-he="אוג׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2019"><img src="thumbs/201908181001.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="46" data-full="201908161804.jpg" data-ru="авг 2019" data-he="אוג׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2019"><img src="thumbs/201908161804.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="47" data-full="201908091730.jpg" data-ru="авг 2019" data-he="אוג׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2019"><img src="thumbs/201908091730.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="48" data-full="201908091656.jpg" data-ru="авг 2019" data-he="אוג׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2019"><img src="thumbs/201908091656.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="49" data-full="201906041704.jpg" data-ru="июн 2019" data-he="יוני 2019" aria-label="Открыть фото / פתח תמונה" data-en="Jun 2019"><img src="thumbs/201906041704.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="50" data-full="201904222145_03.jpg" data-ru="апр 2019" data-he="אפר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2019"><img src="thumbs/201904222145_03.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="51" data-full="201904222145_02.jpg" data-ru="апр 2019" data-he="אפר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2019"><img src="thumbs/201904222145_02.jpg" width="640" height="960" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="52" data-full="201904222145.jpg" data-ru="апр 2019" data-he="אפר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2019"><img src="thumbs/201904222145.jpg" width="640" height="960" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="53" data-full="201904222124.jpg" data-ru="апр 2019" data-he="אפר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2019"><img src="thumbs/201904222124.jpg" width="640" height="960" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="54" data-full="201904222123.jpg" data-ru="апр 2019" data-he="אפר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2019"><img src="thumbs/201904222123.jpg" width="640" height="427" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="55" data-full="201904071318.jpg" data-ru="апр 2019" data-he="אפר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2019"><img src="thumbs/201904071318.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="56" data-full="201904022151.jpg" data-ru="апр 2019" data-he="אפר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Apr 2019"><img src="thumbs/201904022151.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="57" data-full="201903221817.jpg" data-ru="мар 2019" data-he="מרץ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2019"><img src="thumbs/201903221817.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="58" data-full="201903151645.jpg" data-ru="мар 2019" data-he="מרץ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2019"><img src="thumbs/201903151645.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="59" data-full="201903151643.jpg" data-ru="мар 2019" data-he="מרץ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2019"><img src="thumbs/201903151643.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="60" data-full="201903091614.jpg" data-ru="мар 2019" data-he="מרץ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2019"><img src="thumbs/201903091614.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="61" data-full="201903071213.jpg" data-ru="мар 2019" data-he="מרץ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2019"><img src="thumbs/201903071213.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="62" data-full="201903071212.jpg" data-ru="мар 2019" data-he="מרץ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2019"><img src="thumbs/201903071212.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="63" data-full="201903061047.jpg" data-ru="мар 2019" data-he="מרץ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2019"><img src="thumbs/201903061047.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="64" data-full="201902101352.jpg" data-ru="фев 2019" data-he="פבר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Feb 2019"><img src="thumbs/201902101352.jpg" width="640" height="806" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="65" data-full="201902101351.jpg" data-ru="фев 2019" data-he="פבר׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Feb 2019"><img src="thumbs/201902101351.jpg" width="640" height="905" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="66" data-full="201901251148.jpg" data-ru="янв 2019" data-he="ינו׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Jan 2019"><img src="thumbs/201901251148.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="67" data-full="201901241510.jpg" data-ru="янв 2019" data-he="ינו׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Jan 2019"><img src="thumbs/201901241510.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="68" data-full="201901241452.jpg" data-ru="янв 2019" data-he="ינו׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Jan 2019"><img src="thumbs/201901241452.jpg" width="640" height="697" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="69" data-full="201901181105.jpg" data-ru="янв 2019" data-he="ינו׳ 2019" aria-label="Открыть фото / פתח תמונה" data-en="Jan 2019"><img src="thumbs/201901181105.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2019 / עבודה, 2019"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="70" data-full="201712181302.jpg" data-ru="дек 2017" data-he="דצמ׳ 2017" aria-label="Открыть фото / פתח תמונה" data-en="Dec 2017"><img src="thumbs/201712181302.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2017 / עבודה, 2017"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="71" data-full="201711291525.jpg" data-ru="ноя 2017" data-he="נוב׳ 2017" aria-label="Открыть фото / פתח תמונה" data-en="Nov 2017"><img src="thumbs/201711291525.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2017 / עבודה, 2017"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="72" data-full="201711191151.jpg" data-ru="ноя 2017" data-he="נוב׳ 2017" aria-label="Открыть фото / פתח תמונה" data-en="Nov 2017"><img src="thumbs/201711191151.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Работа, 2017 / עבודה, 2017"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="73" data-full="201710281156.jpg" data-ru="окт 2017" data-he="אוק׳ 2017" aria-label="Открыть фото / פתח תמונה" data-en="Oct 2017"><img src="thumbs/201710281156.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2017 / עבודה, 2017"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="74" data-full="201710281152.jpg" data-ru="окт 2017" data-he="אוק׳ 2017" aria-label="Открыть фото / פתח תמונה" data-en="Oct 2017"><img src="thumbs/201710281152.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2017 / עבודה, 2017"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="75" data-full="201703231313.jpg" data-ru="мар 2017" data-he="מרץ 2017" aria-label="Открыть фото / פתח תמונה" data-en="Mar 2017"><img src="thumbs/201703231313.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2017 / עבודה, 2017"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="76" data-full="201610101003.jpg" data-ru="окт 2016" data-he="אוק׳ 2016" aria-label="Открыть фото / פתח תמונה" data-en="Oct 2016"><img src="thumbs/201610101003.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Работа, 2016 / עבודה, 2016"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="77" data-full="201610071832.jpg" data-ru="окт 2016" data-he="אוק׳ 2016" aria-label="Открыть фото / פתח תמונה" data-en="Oct 2016"><img src="thumbs/201610071832.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Работа, 2016 / עבודה, 2016"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="78" data-full="201610071451.jpg" data-ru="окт 2016" data-he="אוק׳ 2016" aria-label="Открыть фото / פתח תמונה" data-en="Oct 2016"><img src="thumbs/201610071451.jpg" width="640" height="898" loading="lazy" decoding="async" alt="Работа, 2016 / עבודה, 2016"></button></figure>
+<figure class="card"><button type="button" class="open" data-i="79" data-full="201608081311.jpg" data-ru="авг 2016" data-he="אוג׳ 2016" aria-label="Открыть фото / פתח תמונה" data-en="Aug 2016"><img src="thumbs/201608081311.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Работа, 2016 / עבודה, 2016"></button></figure>
+    </div>
+  </section>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2 data-ru="Давайте работать вместе" data-he="בואו נעבוד יחד" data-en="Let&#x27;s work together">Давайте работать вместе</h2>
+    <p data-ru="Образцы реальной продукции могу принести на встречу." data-he="דוגמאות של מוצרים אמיתיים אפשר להביא לפגישה." data-en="I can bring real product samples to a meeting.">Образцы реальной продукции могу принести на встречу.</p>
+    <ul>
+      <li><a href="tel:+972557723404"><small data-ru="Телефон" data-he="טלפון" data-en="Phone">Телефон</small><span dir="ltr">055-772-3404</span></a></li>
+      <li><a href="mailto:marina.grushko@gmail.com"><small>Email</small>marina.grushko@gmail.com</a></li>
+      <li><a href="https://instagram.com/marina.grushko" target="_blank" rel="noopener"><small>Instagram</small>@marina.grushko</a></li>
+      <li><a href="https://wa.me/c/972557723404" target="_blank" rel="noopener"><small>WhatsApp</small><span data-ru="Каталог" data-he="קטלוג" data-en="Catalog">Каталог</span></a></li>
+    </ul>
+  </div>
+</section>
+<footer>© <span id="yr">2026</span> Marina Grushko · <span data-ru="Герцлия, Израиль" data-he="הרצליה, ישראל" data-en="Herzliya, Israel">Герцлия, Израиль</span></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Gallery">
+  <button type="button" class="x" aria-label="Close">×</button>
+  <button type="button" class="p" aria-label="Previous">‹</button>
+  <img alt="" id="lbimg">
+  <button type="button" class="n" aria-label="Next">›</button>
+  <div class="cap" id="lbcap"></div>
+</div>
+
+<script>
+(function(){
+  var L='ru';
+  var TITLE={ru:'Марина Грушко — дизайнер текстиля и принтов',en:'Marina Grushko — Textile & Print Designer',he:'מרינה גרושקו — מעצבת טקסטיל והדפסים'};
+  var OPEN={ru:'Открыть фото',en:'Open photo',he:'פתח תמונה'},WORK={ru:'Работа',en:'Work',he:'עבודה'};
+  function setLang(l){
+    L=l;
+    document.documentElement.lang=l;
+    document.documentElement.dir=(l==='he'?'rtl':'ltr');
+    document.querySelectorAll('[data-'+l+']').forEach(function(e){
+      if(e.classList.contains('open')) return;
+      e.innerHTML=e.getAttribute('data-'+l);
+    });
+    document.querySelectorAll('.open').forEach(function(b){
+      b.setAttribute('aria-label',OPEN[l]+' · '+b.getAttribute('data-'+l));
+      var im=b.querySelector('img'); if(im) im.alt=WORK[l]+', '+b.getAttribute('data-'+l);
+    });
+    document.title=TITLE[l];
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l)});
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.l)})});
+  var q=new URLSearchParams(location.search).get('lang'),s=null;
+  try{s=localStorage.getItem('lang')}catch(e){}
+  var start=q||s||'ru'; if(!/^(ru|en|he)$/.test(start)) start='ru'; setLang(start);
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  var btns=[].slice.call(document.querySelectorAll('.open')),lb=document.getElementById('lb'),img=document.getElementById('lbimg'),cap=document.getElementById('lbcap'),cur=0;
+  function show(i){cur=(i+btns.length)%btns.length;var b=btns[cur];img.src=b.dataset.full;cap.textContent=b.getAttribute('data-'+L)+'  ·  '+(cur+1)+' / '+btns.length;}
+  function open(i){lb.classList.add('on');document.body.style.overflow='hidden';show(i);}
+  function close(){lb.classList.remove('on');document.body.style.overflow='';img.removeAttribute('src');if(last)last.focus();}
+  var last=null;
+  btns.forEach(function(b,i){b.addEventListener('click',function(){last=b;open(i)})});
+  lb.querySelector('.x').onclick=close;
+  lb.querySelector('.p').onclick=function(){show(cur-1)};
+  lb.querySelector('.n').onclick=function(){show(cur+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('on'))return;
+    if(e.key==='Escape')close();
+    var rtl=document.documentElement.dir==='rtl';
+    if(e.key==='ArrowRight')show(cur+(rtl?-1:1));
+    if(e.key==='ArrowLeft')show(cur+(rtl?1:-1));
+  });
+  var sx=null;
+  lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(cur+(d<0?1:-1));sx=null});
+})();
+</script>
+</body>
+</html>
